@@ -1,20 +1,20 @@
 /* Generates fibonacci numbers using iteration */
-function fib(number) {
+function fibs(number) {
   // Initialize array
-  const fibArray = []
+  const fibsArray = []
 
   for (i = 0; i < number; i++) {
     // Add 0, 1 as first two numbers
-    if (fibArray.length < 2) {
-      fibArray.push(i)
+    if (fibsArray.length < 2) {
+      fibsArray.push(i)
     } else {
-      let arrayLength = fibArray.length
+      let arrayLength = fibsArray.length
       // Add last two numbers from the array
-      let nextNumber = fibArray[arrayLength - 1] + fibArray[arrayLength - 2]
-      fibArray.push(nextNumber)
+      let nextNumber = fibsArray[arrayLength - 1] + fibsArray[arrayLength - 2]
+      fibsArray.push(nextNumber)
     }
   }
 
-  return fibArray
+  return fibsArray
 }
 
