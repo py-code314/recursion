@@ -1,4 +1,4 @@
-// /* Generates fibonacci numbers using recursion */
+/* Generates fibonacci numbers using recursion */
 function fibsRec(number) {
   // Base cases
   if (number === 1) {
@@ -15,7 +15,4 @@ function fibsRec(number) {
     )
     return fibsArray
   }
- 
 }
-
-
