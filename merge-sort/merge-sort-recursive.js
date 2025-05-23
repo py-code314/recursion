@@ -1,3 +1,4 @@
+/* Sorts an array of numbers in ascending order using the merge sort algorithm */
 function mergeSort(arr) {
   // Base case
   if (arr.length < 2) return arr
@@ -11,6 +12,7 @@ function mergeSort(arr) {
   return merge(mergeSort(leftHalf), mergeSort(rightHalf))
 }
 
+/* Merges two sorted arrays into a single sorted array */
 function merge(leftHalf, rightHalf) {
   sortedArray = []
 
@@ -24,5 +26,3 @@ function merge(leftHalf, rightHalf) {
   }
   return [...sortedArray, ...leftHalf, ...rightHalf]
 }
-
-
